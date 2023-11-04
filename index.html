@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="footer.css" />
+</head>
+<body>
+    <header>
+            <div class="Top-header-left" >
+                <div class="menu-icon" id="openDrawerButton">
+                    <i class="material-icons">menu</i>
+                </div>
+                <img src="/Cookpal 1.svg" alt="CookPal Icon">
+            </div>
+            <div class="navbar" >
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+            </div>
+            <div class="top-header-right" >
+                <img src="/profile.svg" alt="profile">
+            </div>
+    </header> 
+        
+            <div class="trending-now" >
+                <img src="Rectangle 20.png" alt="Mike's Famous Salad" >
+                <div class="insideTrending " >
+                    <h3 style="color: #DC582A;">Trending now</h3>
+                    <h1 style="color: white;"> Mike's famous salad with cheese</h1> 
+                    <span style="color: white;">by John Mike</span>
+                </div>
+                
+            </div>
+
+        <!-- Search bar -->
+    <div class="search" >
+        <h2>Search for recipes</h2>
+        <div class="search1">
+            <input type="text" id="searchInput" placeholder="Search recipes...">
+            <div class="search-icon" id="searchIcon">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.5 4C7.63401 4 4.5 7.13401 4.5 11C4.5 14.866 7.63401 18 11.5 18C15.366 18 18.5 14.866 18.5 11C18.5 7.13401 15.366 4 11.5 4ZM2.5 11C2.5 6.02944 6.52944 2 11.5 2C16.4706 2 20.5 6.02944 20.5 11C20.5 15.9706 16.4706 20 11.5 20C6.52944 20 2.5 15.9706 2.5 11Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.4429 15.9429C16.8334 15.5524 17.4666 15.5524 17.8571 15.9429L22.2071 20.2929C22.5977 20.6834 22.5977 21.3166 22.2071 21.7071C21.8166 22.0977 21.1834 22.0977 20.7929 21.7071L16.4429 17.3571C16.0524 16.9666 16.0524 16.3334 16.4429 15.9429Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+    </div>
+        
+        <!-- buttons below search bar -->
+    <div class="buttons">
+        <button id="showAll">Show All</button>
+        <button id="showVeg">Show Veg</button>
+        <button id="showNonVeg">Show Non-Veg</button>
+    </div>
+
+
+
+<div id="MainSideBar">
+    <aside id="sidebar">
+        <h2>Filters</h2>
+        <h3>Rating</h3>
+        <label>4 and Above<input type="radio" name="rating" value="above4.5"></label>
+        <label>Below 4.0 <input type="radio" name="rating" value="below4.0"></label>
+    </aside>
+
+
+    <div id="recipeContainer">
+        <!-- Recipe cards will be dynamically added here -->
+    </div>
+</div>
+
+
+
+<section id="mobileDrawer">
+
+    <div><h id="mobDrawerClose">x</h></div>
+    <div>
+      <div class="siteLogo">
+        <img src="/Cookpal 1.svg" alt="site_logo" />
+      </div>
+      <div class="userProfile">
+        <img src="/profile.svg" alt="User Profile" />
+      </div>
+    </div>
+    <ul class="mobnavOptions">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <section id="aboutUsSection">
+        <img src="/Cookpal 1.svg" alt="site_logo" />
+      <p>
+        Cookpal is a recipe website with a wide variety of delicious
+        recipes, easy-to-use search function. Join our community and let's
+        cook together!
+      </p>
+    </section>
+    <table id="usefulLinksSection">
+      <tr>
+        <th>Company</th>
+        <th>Resources</th>
+      </tr>
+      <tr>
+        <td><a href="#">Home</a></td>
+        <td><a href="#">Blog</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Explore</a></td>
+        <td><a href="#">Use Cases</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Team</a></td>
+        <td><a href="#">Testimonials</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">About Us</a></td>
+        <td><a href="#">Insights</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Activity</a></td>
+      </tr>
+    </table>
+    <section id="contactUsSection">
+      <h1><img src="/Cookpal 1.svg" alt="site_logo" /></h1>
+      <p>To subscribe to our blog and get daily updates subscribe to us.</p>
+      <div>
+        <input
+          id="emailForSub"
+          type="text"
+          placeholder=" Your Email                                @"
+        /><button id="subscribe">Subscribe</button>
+      </div>
+    </section>
+  </footer>
+</footer>
+<section id="socials">
+  <div><img src="./assets/Instagram.svg" alt="social" /></div>
+  <div><img src="./assets/Twitter.svg" alt="social" /></div>
+  <div><img src="./assets/Linkedin.svg" alt="social" /></div>
+  <div><img src="./assets/Facebook.svg" alt="social" /></div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

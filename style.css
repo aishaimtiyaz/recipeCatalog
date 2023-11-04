@@ -1,0 +1,454 @@
+/* Basic styling, adjust as per your design */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling, adjust as per your design */
+header {
+    background-color: #ffffff;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 6fr 4fr 1fr;
+    column-gap: 200px;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+}
+.top-header-right{
+    display: flex;
+}
+.Top-header-left{
+    /* text-align: center; */
+    padding-left: 40px;
+    
+}
+.top-header-right>img{
+    width:40px;
+    padding-right: 0px;
+}
+
+header>div>img {
+     max-height: 40px; /* Adjust the size of the CookPal icon */
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: inline;
+    /* padding: 0; */
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+.navbar a:hover {
+color: #eaaa00;
+}
+
+.trending-now {
+    display: flex;
+    position: relative;
+}
+.trending-now div{
+    position: absolute;
+    padding-left: 140px;
+    padding-top: 120px;
+}
+.trending-now span{
+    color: #DC582A;
+    font-weight: 500;
+
+}
+.trending-now img {
+    width:1240px;
+    padding-left: 40px;
+}
+
+.trending-now p {
+     font-size: 25px; /*Adjust font size as needed */
+    color: white;
+    font-weight: 700;
+    /* font-family: poppins; */
+
+}
+.insideTrending{
+    width: 290px;
+}
+/* .trending-now a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    /* Additional styles for the link 
+} */
+.search>h2 {
+    padding-left: 35px;
+    
+}
+/* .searchbar input{
+padding: 5px;
+    width: 95%;
+} */
+.search-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50;
+    /* Green background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    /* Adjust border radius to match the input field */
+    border-bottom-right-radius: 5px;
+    /* Adjust border radius to match the input field */
+}
+
+.search-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    /* Icon color */
+}
+
+/* Add styles to the search input */
+input[type="text"] {
+    width: calc(100% - 40px);
+    /* Adjust width to accommodate the icon */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Adjust border radius to match the icon */
+    font-size: 16px;
+    outline: none;
+}
+
+/* Search bar styles */
+.search1 {
+    background-color: #fff;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    padding: 20px;
+    padding-left: 35px;
+}
+
+#showAll
+{
+    background-color: #eaaa00;
+    margin-left: 35px;
+}
+#showVeg{
+    background-color:#C4D600;
+}
+#showNonVeg{
+    background-color:#DC582A
+}
+#showAll:hover
+{
+    background-color: #ebb51f;
+}
+#showVeg:hover{
+    background-color:#e6f826;
+}
+#showNonVeg:hover{
+    background-color:#f16837
+}
+button {
+    color: #fff;
+    height: 9vh;
+    width: 180px;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+/* Sidebar styles */
+#sidebar {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin-left: 35px;
+    margin-top: 29px;
+    width: 10%;
+    height: fit-content;
+    position: static;
+    /* top: 100px; */
+    /* margin:10px; */
+    /* bottom: 0; */
+}
+
+#sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#sidebar label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+#MainSideBar{
+    display: flex;
+}
+
+#recipeContainer {
+    /* Styles for recipe cards */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 1%;
+    justify-content:space-around;
+    /* background-color: antiquewhite;
+    border: 2px solid rgb(203, 30, 30); */
+    overflow-y: scroll;
+    /* width: 80%; */
+    height: calc(100vh - 80px);
+    /* gap: 20px; */
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: small;
+    border-radius: 9px;
+    padding: 12px;
+    margin: 7px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    gap: 1px;
+}
+
+.recipe-card>img{
+    
+    width: 280px;
+    height: 190px;
+    padding: 8px 0px 0px 8px;
+    border-radius:12px;
+}
+
+.recipe-card>p{
+    padding-left: 10px;
+    color:rgb(136, 136, 139);
+}
+.titleRating{
+    display: flex;
+    justify-content: space-around;
+}
+.recipe-card>div>h2 {
+    font-size: 18px;
+    margin-top: 3px;
+}
+.recipe-card>div>p {
+    margin-top: 3px;
+}
+.timeLike{
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr;
+    justify-content: space-around;
+    padding-left:10px;
+}
+.timeLike>p{
+    color:  #c74111;
+    font-weight: 500;
+}
+
+.like-button{
+    margin-top: 3px;
+    width:30px;
+    height: 30px;
+    background-color: transparent;
+}
+.titleRating>p>img{
+    width:18px;
+    height: 16px;
+}
+
+.like-button.liked {
+    background-image: url("pinkHeart.png");
+
+}
+
+/* Set the default background image (white heart) */
+.like-button {
+    background-image: url("whiteHeart.png");
+}
+
+
+#mobileDrawer {
+    /* Styles for mobile drawer */
+    display:none;    
+}
+#openDrawerButton{
+    display:none;
+}
+
+
+/* CSS for screens 768px and narrower (mobile) */
+@media screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .navbar {
+        display: none; /* Hide the navbar on mobile */
+    }
+    #openDrawerButton{
+        display:inline-block;
+        background-color: #C4D600;
+    }
+
+    .top-header-right {
+        display: none; /* Hide the top-header-right on mobile */
+    }
+
+    .trending-now h1{
+        font-weight: 500;
+        font-size: large;
+    }
+    .trending-now div{
+        position: absolute;
+        padding-left: 100px;
+        padding-top: 50px;
+    }
+    .trending-now div h3{
+        padding-top:0px;
+        color: #DC582A;
+        font-weight: 300;
+        line-height: 3px;
+    
+    }
+    .trending-now img {
+        width:700px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .search {
+        padding-left: 30px;
+        width:600px;
+    }
+    #showAll
+{
+    background-color: #eaaa00;
+    margin-left: 30px;
+}
+.buttons
+{
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+    width: 600px;
+}
+
+#sidebar {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 29px;
+    width: 30%;
+    height: fit-content;
+    position: static;
+    /* top: 100px; */
+    /* margin:10px; */
+    /* bottom: 0; */
+}
+
+#sidebar h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#sidebar label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#MainSideBar{
+    width: 800px;
+}
+#recipeContainer {
+    /* Styles for recipe cards */
+    /* background-color: #C4D600; */
+    width: 95%;
+    padding: 10px;
+    display: flex;
+     flex-wrap: wrap;
+    margin-left: 1%;
+    justify-content:space-around;
+    /* /* background-color: antiquewhite; */
+    /* border: 2px solid rgb(203, 30, 30); */ 
+    overflow-y: scroll;
+    
+    /* height: calc(100vh - 80px); */
+    height: 500px;
+    /* gap: 20px; */
+}
+.recipe-card {
+    width: 250px;
+    /* align-self: center; */
+    padding: 4px;
+    /* margin: 2px; */
+    /* background-color: #4CAF50; */
+}
+.recipe-card>img{
+    /* align-self: center; */
+    width: 220px;
+    height: 170px;
+    padding-left: 7px;
+    border-radius:12px;
+    /* background-color: #C4D600; */
+}
+.recipe-card>div>h2 {
+    font-size: 15px;
+    margin-top: 2px;
+}
+.recipe-card>div>p {
+    margin-top: 2px;
+}
+    .siteLogo {
+        display: block; /* Display the Cookpal 1.svg icon on mobile */
+        margin-left: 15px; /* Add some margin to space it from the menu button */
+    }
+footer{
+    padding-left: 30px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#aboutUsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#usefulLinksSection>tr{
+    align-items: center;
+}
+#socials
+{
+    margin-left: 160px;
+    padding: 20px;
+}
+}

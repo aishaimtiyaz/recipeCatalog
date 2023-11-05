@@ -320,7 +320,11 @@ button {
     .top-header-right {
         display: none; /* Hide the top-header-right on mobile */
     }
-
+.insideTrending{
+    width: fit-content;
+    height: 80px;
+    padding-top: 20px;
+}
     .trending-now h1{
         font-weight: 600;
         font-size: medium;
@@ -338,7 +342,7 @@ button {
         padding-top:0px;
         color: #DC582A;
         font-weight: 400;
-        line-height: 4px;
+        line-height: 10px;
         font-size: small;
     
     }
@@ -428,7 +432,11 @@ button {
 #sidebar>label {
     font-size: 12px;
 }
-
+.insideTrending{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #recipeContainer {
     /* Styles for recipe cards */
     /* background-color: #C4D600; */

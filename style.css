@@ -1,8 +1,8 @@
 /* Basic styling, adjust as per your design */
-body {
+* {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px; 
 }
 
 /* Basic styling, adjust as per your design */
@@ -93,10 +93,6 @@ color: #eaaa00;
     padding-left: 35px;
     
 }
-/* .searchbar input{
-padding: 5px;
-    width: 95%;
-} */
 .search-icon {
     width: 40px;
     height: 40px;
@@ -135,6 +131,7 @@ input[type="text"] {
 .search1 {
     background-color: #fff;
     padding-top: 20px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -316,6 +313,7 @@ button {
     }
     #openDrawerButton{
         display:inline-block;
+
         background-color: #C4D600;
     }
 
@@ -324,51 +322,97 @@ button {
     }
 
     .trending-now h1{
-        font-weight: 500;
-        font-size: large;
+        font-weight: 600;
+        font-size: medium;
     }
     .trending-now div{
         position: absolute;
-        padding-left: 100px;
-        padding-top: 50px;
+        padding-left: 70px;
+        padding-top: 20px;
+        
+    }
+    .trending-now div h1{
+     line-height: 4px;
     }
     .trending-now div h3{
         padding-top:0px;
         color: #DC582A;
-        font-weight: 300;
-        line-height: 3px;
+        font-weight: 400;
+        line-height: 4px;
+        font-size: small;
     
     }
+    .trending-now div span {
+        font-weight: 300;
+        font-size:small;
+    }
     .trending-now img {
-        width:700px;
-        padding-left: 40px;
-        padding-right: 40px;
+        width:320px;
+        height:110px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+
     .search {
-        padding-left: 30px;
-        width:600px;
+        padding-left: 10px;
+        width:280px;
+        height: 110px;
     }
+    .search>h2 {
+        padding-left: 20px;
+        line-height: 5px;  
+    }
+    input[type="text"] {
+        margin-left: 10px;
+        line-height: 5px;
+        
+    }
+    
     #showAll
 {
     background-color: #eaaa00;
-    margin-left: 30px;
+    margin-left: 20px;
+    
 }
 .buttons
 {
     display: flex;
     justify-content: space-around;
     overflow-x: scroll;
-    width: 600px;
-}
+    width: 340px;
 
+}
+.buttons button{
+    width:200px;
+    height: 7vh;
+    font-size: small;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    /* margin: 10px; */
+    padding: 12px;
+}
+#MainSideBar{
+    width: 320px;
+   /*  height: 550px; */
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    padding: 0px;
+}
+#sidebar h2{
+    display: none;
+}
 #sidebar {
+    display: flex;
+    gap:12px;
     background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    margin-left: 30px;
-    margin-top: 29px;
-    width: 30%;
-    height: fit-content;
+    box-shadow: none;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 1px;
+    width: 23%;
+    /* height: fit-content; */
     position: static;
     /* top: 100px; */
     /* margin:10px; */
@@ -377,47 +421,52 @@ button {
 
 #sidebar h3 {
     font-size: 14px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    
 }
 
-#sidebar label {
-    display: block;
-    margin-bottom: 10px;
+#sidebar>label {
     font-size: 12px;
 }
-#MainSideBar{
-    width: 800px;
-}
+
 #recipeContainer {
     /* Styles for recipe cards */
     /* background-color: #C4D600; */
-    width: 95%;
-    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    /* padding: 10px; */
     display: flex;
      flex-wrap: wrap;
-    margin-left: 1%;
-    justify-content:space-around;
+    margin-left: 0px;
+    /* justify-content:space-between; */
     /* /* background-color: antiquewhite; */
     /* border: 2px solid rgb(203, 30, 30); */ 
     overflow-y: scroll;
     
     /* height: calc(100vh - 80px); */
-    height: 500px;
-    /* gap: 20px; */
+    /* height: 500px; */
+    gap: 5px;
 }
 .recipe-card {
-    width: 250px;
-    /* align-self: center; */
-    padding: 4px;
-    /* margin: 2px; */
+    width: 130px;
+    height: 220px;
+    align-self: center;
+    /* padding: 4px; */
+    margin: 0px;
     /* background-color: #4CAF50; */
 }
+.titleRating>p{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
 .recipe-card>img{
-    /* align-self: center; */
-    width: 220px;
-    height: 170px;
-    padding-left: 7px;
-    border-radius:12px;
+    /* align-items: center; */
+    width: 135px;
+    height: 120px;
+    padding: 0px;
+    border-radius:10px;
+    /* line-height: 0px; */
     /* background-color: #C4D600; */
 }
 .recipe-card>div>h2 {
@@ -425,15 +474,19 @@ button {
     margin-top: 2px;
 }
 .recipe-card>div>p {
-    margin-top: 2px;
+    font-size: 12px;
+    margin-top: 5px;
+    /* line-height: 20px; */
 }
-    .siteLogo {
-        display: block; /* Display the Cookpal 1.svg icon on mobile */
-        margin-left: 15px; /* Add some margin to space it from the menu button */
-    }
+.timeLike{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7px;
+}
+
 footer{
-    padding-left: 30px;
-    margin-left: 200px;
+    /* padding-left: 30px; */
+    /* margin-left: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -443,12 +496,67 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
-#usefulLinksSection>tr{
-    align-items: center;
+#aboutUsSection>img{
+    width: 100px;
+    height: 50px;
+    align-self: center;
 }
-#socials
-{
-    margin-left: 160px;
-    padding: 20px;
+#usefulLinksSection{
+    display: none;
 }
+#contactUsSection{
+    display: none;
+}
+#openDrawerButton{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #fbf9f9;
+    box-shadow: 0px 2px 5px rgba(222, 217, 217, 0.5);
+}
+#mobDrawerClose{
+  width: 30px;
+  height: 30px;text-align: center;
+  background-color: #e5e2e2;position: fixed;right: 40vw;
+ box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+ display: block;
+}
+#mobileDrawer{
+    background-color: #fdfbfb;
+    width: 60vw;
+    height: 100vh;
+    top:0px;
+}
+.mobnavOptions>li>a{
+ /* list-style: none; */
+ text-decoration: none;
+ color: #000000;
+ font-weight: 600;
+ padding-top: 30px;
+ padding-left: 15px;
+ 
+}
+.mobnavOptions>li>a:hover{
+    color:#C4D600;
+}
+#mobileDrawerHeader>img{
+width: 67px;
+height: 35px;
+padding-right: 38px;
+}
+
+mobileDrawerHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    /* background-color: rgb(4, 89, 112); */
+}
+#mobileDrawerHeader>{
+
+}
+
 }

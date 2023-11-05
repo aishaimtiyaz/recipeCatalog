@@ -133,6 +133,7 @@ const showNonVegBtn = document.getElementById("showNonVeg");
 const ratingFilters = document.querySelectorAll('input[type="radio"][name="rating"]');
 const openDrawerButton = document.getElementById("openDrawerButton");
 const mobileDrawer = document.getElementById("mobileDrawer");
+const mobileDrawerClose = document.getElementById("mobDrawerClose");
 
 // Function to render recipe cards
 function renderRecipes(recipesToShow) {
@@ -146,11 +147,11 @@ function renderRecipes(recipesToShow) {
             <p>${recipe.type}</p>
             <div class="titleRating">
             <h2>${recipe.name}</h2>
-            <p><img src="/star.png" alt="rating"> ${recipe.rating}</p></div>
+            <p><img src="star.png" alt="rating"> ${recipe.rating}</p></div>
             <div class="timeLike">
             <p>${recipe.time}</p>
             <button class="like-button"></button>
-            <img src="/msg.png" alt="comment" width="30px" height="30px">
+            <img src="msg.png" alt="comment" width="30px" height="30px">
             </div>
         `;
         // Add a click event listener to the like button
@@ -179,10 +180,16 @@ searchInput.addEventListener("input", () => {
 openDrawerButton.addEventListener("click",()=> {
     mobileDrawer.style.display = "block";
     mobileDrawer.style.position= "fixed";
-    mobileDrawer.style.top ="20px";
+    mobileDrawer.style.top ="0px";
     mobileDrawer.style.textDecoration="none";
 
 });
+mobileDrawerClose.addEventListener("click",()=> {
+    mobileDrawer.style.display = "none";
+
+});
+
+
 // Function to handle toggle buttons
 showAllBtn.addEventListener("click", () => {
     renderRecipes(recipes);
